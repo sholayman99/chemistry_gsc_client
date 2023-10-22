@@ -1,5 +1,6 @@
 import Banner from "../components/Home/Banner";
 import Hero from "../components/Home/Hero";
+import Carousel from "../components/shared/Carousel";
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
            <Banner />
            <Hero />
+           <Carousel />
         </div>
     );
 };

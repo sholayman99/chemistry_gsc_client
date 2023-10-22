@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={hero} className="max-w-md rounded-lg shadow-2xl" />
         <div className="max-w-[50%] ">
-          <h1 className="text-4xl font-bold">About Dept. Of Chemistry</h1>
+          <h1 className="text-4xl font-semiold">About Dept. Of Chemistry</h1>
           <p className="py-6">
             Welcome to the Department of Chemistry at the Govt. Saadat College,Tangail.
             The Department views student{text} education and training as

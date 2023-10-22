@@ -13,8 +13,8 @@ const Navbar = () => {
           to={"/"}
           className={({ isActive }) =>
             isActive
-              ? "font-bold underline text-secondary  text-sm"
-              : "text-sm text-primary font-semibold"
+              ? "font-bold underline text-primary  text-sm"
+              : "text-sm  font-semibold"
           }
         >
           HOME
@@ -25,8 +25,8 @@ const Navbar = () => {
           to={"/contact"}
           className={({ isActive }) =>
             isActive
-              ? "font-bold  text-secondary underline text-sm"
-              : "text-sm text-primary font-semibold"
+              ? "font-bold  text-primary underline text-sm"
+              : "text-sm  font-semibold"
           }
         >
           CONTACT
@@ -38,8 +38,8 @@ const Navbar = () => {
           to={"/about"}
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-secondary underline text-sm"
-              : "text-sm text-primary font-semibold"
+              ? "font-bold text-primary underline text-sm"
+              : "text-sm  font-semibold"
           }
         >
          ABOUT
@@ -52,8 +52,8 @@ const Navbar = () => {
           to={"/dashboard"}
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-secondary underline text-sm"
-              : "text-sm text-primary font-semibold"
+              ? "font-bold text-primary underline text-sm"
+              : "text-sm  font-semibold"
           }
         >
          DASHBOARD
