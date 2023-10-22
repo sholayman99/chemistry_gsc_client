@@ -86,12 +86,13 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1">
       {navList}
     </ul>
-  </div>
-  <div className="navbar-end">
-    <Link  to={"/login"} className="text-base-100 bg-primary w-28 h-10 text-center btn 
+    <div className="">
+    <Link  to={"/login"} className="text-base-100 bg-primary w-28 text-center btn 
      rounded-tr-md rounded-tl-md 
     rounded-bl-md rounded-br-3xl">SIGN IN</Link>
   </div>
+  </div>
+  
 </div>
   );
 };

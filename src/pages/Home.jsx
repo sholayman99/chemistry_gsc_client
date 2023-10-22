@@ -1,6 +1,8 @@
+import AcademicPrograms from "../components/Home/AcademicPrograms";
 import Banner from "../components/Home/Banner";
 import Hero from "../components/Home/Hero";
-import Carousel from "../components/shared/Carousel";
+import Footer from "../components/shared/Footer";
+
 
 
 const Home = () => {
@@ -8,7 +10,8 @@ const Home = () => {
         <div>
            <Banner />
            <Hero />
-           <Carousel />
+           <AcademicPrograms />
+           <Footer />
         </div>
     );
 };

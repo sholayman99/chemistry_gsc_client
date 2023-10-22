@@ -8,7 +8,7 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: "#1e3a8a",
+          primary: "#0E3C68",
 
           secondary: "#9333ea",
 

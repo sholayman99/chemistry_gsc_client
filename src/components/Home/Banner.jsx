@@ -13,7 +13,7 @@ const Banner = () => {
            <h2 className="text-base-100 text-[2.5rem] font-bold ">Welcome to </h2>
            <h1 className="text-base-100 text-[3.5rem] font-extrabold">Department of Chemistry</h1>
            <h3 className="text-warning text-[1.5rem] font-semibold">Govt. Saadat College,Tangail</h3>
-           <button className="btn  mt-4 btn-xs sm:btn-sm md:btn-md lg:w-40">Read More..</button>
+           <button className="btn font-bold mt-4 btn-xs sm:btn-sm md:btn-md lg:w-40">Read More..</button>
         </div>
     );
 };
