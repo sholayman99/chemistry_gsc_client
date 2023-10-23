@@ -2,7 +2,9 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {fontFamily: {  
+      "google1":['Rubik'],
+    }},
   },
   daisyui: {
     themes: [
