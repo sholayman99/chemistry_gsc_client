@@ -28,12 +28,15 @@ const Login = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center,center",
       }}
-      className="min-h-screen flex  items-center lg:justify-start justify-center"
+      className="min-h-screen flex lg:bg-fixed items-center lg:justify-start justify-center"
     >
       <div className="bg-white lg:ml-32 p-8  rounded-lg shadow-md  w-96 md:w-2/3 lg:w-1/2 xl:w-1/3 transition-transform transform hover:scale-105">
-        <h2 className="text-3xl font-google text-center text-primary font-bold mb-4">
+        <div className="flex items-center justify-center flex-col">
+        <h2 className="text-3xl font-google text-center text-primary font-bold mb-3">
           Login
         </h2>
+        <div className="lg:w-8 lg:h-[2px] bg-secondary"></div>
+        </div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <label
@@ -109,7 +112,7 @@ const Login = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="bg-gradient-to-r from-[#0f1429] to-[#074377] w-80
+              className="bg-gradient-to-r from-[#0f1429] to-[#074377] w-80 font-bold
                text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
             >
               Login

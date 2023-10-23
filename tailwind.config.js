@@ -12,7 +12,7 @@ export default {
         mytheme: {
           primary: "#0E3C68",
 
-          secondary: "#9333ea",
+          secondary: "#0f1429",
 
           accent: "#84cc16",
 
@@ -20,7 +20,7 @@ export default {
 
           "base-100": "#ffffff",
 
-          info: "#22d3ee",
+          info: "#06b6d4",
 
           success: "#22c55e",
 
