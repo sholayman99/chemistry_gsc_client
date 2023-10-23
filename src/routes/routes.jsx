@@ -7,6 +7,7 @@ import NotFound from "../components/shared/NotFound";
 import Signup from "../pages/Signup";
 import Login from "../pages/Login";
 import Dashboard from "../layout/Dashboard/Dashboard";
+import UpdateProfile from "../pages/UpdateProfile";
 
 
 const routes = createBrowserRouter([
@@ -38,6 +39,10 @@ const routes = createBrowserRouter([
                 path : "*",
                 element : <NotFound />
             },
+            {
+                path:"/update-profile",
+                element: <UpdateProfile />
+            }
            
         ]
     },

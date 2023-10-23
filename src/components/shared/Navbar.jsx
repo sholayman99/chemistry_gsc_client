@@ -112,7 +112,7 @@ const Navbar = () => {
      rounded-tr-sm rounded-tl-3xl
     rounded-bl-sm rounded-br-3xl"
           >
-            SIGN IN
+            Login
           </Link>
         </div>
       </div>
