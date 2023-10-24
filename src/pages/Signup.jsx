@@ -24,7 +24,8 @@ const Signup = () => {
   return (
     <>
       <div className="h-screen md:flex">
-        <div className="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-blue-800 to-purple-700 i justify-around items-center hidden">
+        <div className="relative overflow-hidden md:flex w-1/2 bg-gradient-to-tr from-accent to-info i 
+        justify-around items-center hidden">
           <div>
             <h1 className="text-white font-bold text-4xl font-sans">
               Department of Chemistry
@@ -32,7 +33,7 @@ const Signup = () => {
             <p className="text-white mt-1">Govt. Saadat College,Tangail</p>
             <button
               type="submit"
-              className="block w-28 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2"
+              className="block w-28 bg-white text-neutral mt-4 py-2 rounded-2xl font-bold mb-2"
             >
               Read More
             </button>
@@ -79,7 +80,7 @@ const Signup = () => {
                     {...field}
                     type="fullName"
                     id="fullName"
-                    placeholder="Your FullName"
+                    placeholder="Full Name"
                     className={`pl-2  w-full border-none ${
                       errors.fullname ? "border-red-500" : "border-gray-300"
                     }`}
@@ -241,8 +242,8 @@ const Signup = () => {
             )}
             <button
               type="submit"
-              className="block w-full bg-indigo-800 mt-4 py-2 transition duration-300
-              hover:bg-indigo-950 rounded-2xl text-white font-semibold mb-2"
+              className="block w-full bg-accent mt-4 py-2 transition duration-300
+              hover:bg-info rounded-2xl text-white font-semibold mb-2"
             >
               Sign Up
             </button>
@@ -258,7 +259,7 @@ const Signup = () => {
             <div className="mt-4 text-center">
               <Link
                 to="/"
-                className="text-base-100 btn btn-xs md:btn-sm lg:btn-md  rounded-2xl bg-black 
+                className="text-base-100 btn btn-xs md:btn-sm lg:btn-md  rounded-2xl bg-neutral 
            hover:underline hover:text-black"
               >
                 <FaHome />

@@ -1,5 +1,8 @@
 import { useForm, Controller } from "react-hook-form";
 import signup from "../assets/images/signup.jpg";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 
 const UpdateProfile = () => {
   const {
@@ -19,7 +22,6 @@ const UpdateProfile = () => {
 
   return (
     <main
-    
       style={{
         backgroundImage: `url(${signup})`,
         backgroundRepeat: "no-repeat",
@@ -33,8 +35,10 @@ const UpdateProfile = () => {
          p-8 lg:w-[70%] w-[90%] "
         >
           <div className="flex mb-4 items-center justify-center flex-col">
-            <h2 className="lg:text-2xl md:text-xl text-lg font-google text-center text-primary
-             font-bold mb-3">
+            <h2
+              className="lg:text-2xl md:text-xl text-lg font-google text-center text-primary
+             font-bold mb-3"
+            >
               Add Your Information
             </h2>
             <div className="lg:w-12 lg:h-[2px] bg-secondary"></div>
@@ -50,6 +54,7 @@ const UpdateProfile = () => {
                 </label>
                 <Controller
                   name="image"
+                  defaultValue=""
                   control={control}
                   render={({ field }) => (
                     <input
@@ -62,8 +67,6 @@ const UpdateProfile = () => {
                 />
               </div>
 
-             
-
               <div className="mb-1">
                 <label
                   htmlFor="mobile"
@@ -74,6 +77,7 @@ const UpdateProfile = () => {
                 <Controller
                   name="mobile"
                   control={control}
+                  defaultValue=""
                   rules={{
                     required: "Mobile No is required",
                     pattern: {
@@ -110,6 +114,7 @@ const UpdateProfile = () => {
                 <Controller
                   name="regiNo"
                   control={control}
+                  defaultValue=""
                   rules={{
                     required: "Regi No is required",
                   }}
@@ -139,6 +144,7 @@ const UpdateProfile = () => {
                 <Controller
                   name="session"
                   control={control}
+                  defaultValue=""
                   rules={{
                     required: "Session is required",
                   }}
@@ -167,6 +173,7 @@ const UpdateProfile = () => {
                 <Controller
                   name="classroll"
                   control={control}
+                  defaultValue=""
                   rules={{
                     required: "Class Roll is required",
                   }}
@@ -186,7 +193,7 @@ const UpdateProfile = () => {
                 )}
               </div>
 
-              <div className="mb-4  col-span-1">
+              <div className="mb-1  col-span-1">
                 <label
                   htmlFor="gender"
                   className="block text-gray-600 font-medium text-xs md:text-sm lg:text-md"
@@ -196,6 +203,7 @@ const UpdateProfile = () => {
                 <Controller
                   name="gender"
                   control={control}
+                  defaultValue=""
                   rules={{
                     required: "Gender is required",
                   }}
@@ -203,7 +211,8 @@ const UpdateProfile = () => {
                     <select
                       {...field}
                       id="gender"
-                      className={`mt-1 lg:p-1 p-0.5 text-sm md:text-md lg:text-lg w-full rounded-md border  ${
+                      className={`mt-1 lg:p-2 p-1 text-xs md:text-sm lg:text-md w-full 
+                      rounded-md border   ${
                         errors.gender ? "border-error" : "border-gray-300"
                       }`}
                     >
@@ -218,9 +227,37 @@ const UpdateProfile = () => {
                   <p className="text-error">Gender is required</p>
                 )}
               </div>
-       
-       {/* Date of Birth */}
-       
+
+              {/* Date of Birth */}
+              <div className="mb-3">
+                <label
+                  htmlFor="dob"
+                  className="block text-gray-600 font-medium text-xs md:text-sm lg:text-md"
+                >
+                  Date of Birth
+                </label>
+                <div className="relative">
+                  <Controller
+                    name="dob"
+                    control={control}
+                    defaultValue=""
+                    render={({ field }) => (
+                      <DatePicker
+                        {...field}
+                        id="dob"
+                        selected={field.value}
+                        onChange={(date) => field.onChange(date)}
+                        dateFormat="MM/dd/yyyy"
+                        isClearable
+                        className={`mt-1 lg:p-1 p-0.5 text-sm md:text-md lg:text-lg w-full rounded-md border  ${
+                          errors.dob ? "border-error" : "border-gray-300"
+                        }`}
+                      />
+                    )}
+                  />
+               
+                </div>
+              </div>
             </div>
 
             <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
@@ -234,6 +271,7 @@ const UpdateProfile = () => {
                 <Controller
                   name="presentAddress"
                   control={control}
+                  defaultValue=""
                   rules={{
                     required: "Present Address is required",
                   }}
@@ -265,6 +303,7 @@ const UpdateProfile = () => {
                 <Controller
                   name="permanentAddress"
                   control={control}
+                  defaultValue=""
                   rules={{
                     required: "Permanent Address is required",
                   }}
@@ -295,7 +334,6 @@ const UpdateProfile = () => {
               </button>
             </div>
           </form>
-          
         </div>
       </div>
     </main>

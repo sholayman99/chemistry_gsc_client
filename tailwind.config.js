@@ -14,13 +14,13 @@ export default {
 
           secondary: "#0f1429",
 
-          accent: "#84cc16",
+          accent: "rgb(79 70 229)",
 
-          neutral: "#111827",
+          neutral: "#1c1917",
 
           "base-100": "#ffffff",
 
-          info: "#06b6d4",
+          info: "rgb(30 27 75)",
 
           success: "#22c55e",
 
