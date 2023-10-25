@@ -1,6 +1,7 @@
 import AcademicPrograms from "../components/Home/AcademicPrograms";
 import Banner from "../components/Home/Banner";
 import Hero from "../components/Home/Hero";
+import LatestEvents from "../components/Home/LatestEvents";
 
 
 
@@ -11,7 +12,7 @@ const Home = () => {
            <Banner />
            <Hero />
            <AcademicPrograms />
-           
+           <LatestEvents />
         </div>
     );
 };

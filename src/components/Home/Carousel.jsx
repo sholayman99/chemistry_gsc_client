@@ -59,7 +59,6 @@ const Carousel = () => {
         style={{
           "--swiper-pagination-color": "black",
           "--swiper-navigation-color": "black",
-          "--swiper-button-next": "40px",
         }}
         loop={true}
         slidesPerView={3}
@@ -74,26 +73,26 @@ const Carousel = () => {
         className="mySwiper"
       >
         {images.map((slide) => (
-          <SwiperSlide className="lg:px-10 lg:py-10 py-8" key={slide.img}>
-            <div className="card 
+          <SwiperSlide className="lg:px-10  lg:py-10 py-8" key={slide.img}>
+            <div className="card md:ml-3
             hover: transform hover:scale-105  transition duration-500 ease-in-out 
-             lg:w-full lg:h-96 bg-base-100 w-28 h-32 shadow-xl hover:border-secondary border-[2px]">
+             lg:w-full lg:h-96 bg-base-100 w-28 md:w-[75%] md:h-60 h-32 shadow-xl hover:border-accent border-[2px]">
               <figure className="">
                 <img
                   src={slide.img}
                   alt={slide.title}
-                  className="rounded-md lg:h-52 w-full h-16 "
+                  className="rounded-md lg:h-52 w-full h-16 md:h-32 "
                 />
               </figure>
               <div className="flex flex-col items-center text-center mt-4 lg:mt-0">
-                <h2 className="lg:card-title lg:font-bold lg:mt-2 font-normal text-[8px] text-primary">{slide.title} </h2>
-                <div className="  text-[4px] lg:mt-6 flex items-center lg:px-8 lg:max-w-[70%] 
+                <h2 className="lg:card-title md:text-[13px] lg:font-bold lg:mt-2 font-normal text-[8px] text-primary">{slide.title} </h2>
+                <div className="lg:mt-6 flex items-center lg:px-8 lg:max-w-[70%] 
                 max-w-[70%] mt-3 px-2 py-1 rounded-md lg:py-2 text-center mx-auto 
                 bg-gradient-to-r from-warning to-[#f59e0b]
                 transform hover:scale-105 transition duration-500 ease-in-out"
                 >
-                  <p className=" lg:text-[14px] font-bold">Read More..</p>
-                    <BsFillCheckCircleFill className="lg:text-2xl text-[6px]"/>
+                  <p className=" lg:text-[14px] text-[4px] md:text-[12px]  font-bold">Read More..</p>
+                    <BsFillCheckCircleFill className="lg:text-2xl md:text-[14px] text-[6px]"/>
                  
                 </div>
               </div>
