@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.link-inactive{
+.menu .link-inactive{
     color:rgb(62, 59, 59);
     background-color: none;
 }
-.link-active{
+.menu .link-active{
     color: #060202;
     font-weight: bold;
     text-decoration: underline;
@@ -14,16 +14,14 @@
 }
 
 
-
-.bg-custom{
-    background: rgb(19,189,217);
-background: radial-gradient(circle, rgba(19,189,217,1) 0%, rgba(8,41,69,1) 100%);
-}
-
 .bg-image{
     background-attachment: fixed;
     height: 100vh;
 }
+
+
+  
+
 
 
 @media screen and (max-width:767px) {

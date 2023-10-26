@@ -1,6 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { PiDotsNineBold } from "react-icons/pi";
-import { FaUserCircle, FaDotCircle } from "react-icons/fa";
+import { FaUserCircle, FaDotCircle, FaHome } from "react-icons/fa";
 
 const Dashboard = () => {
   return (
@@ -61,9 +61,8 @@ const Dashboard = () => {
               className={"bg-transparent font-semibold text-gray-800"}
               to={"/dashboard"}
             >
-              {" "}
               <FaDotCircle /> Dashboard
-            </Link>{" "}
+            </Link>
           </li>
           <li>
             <NavLink
@@ -76,6 +75,9 @@ const Dashboard = () => {
             </NavLink>
           </li>
           <div className="divider w-52  bg-gray-600 h-[0.1px]"></div> 
+          <li>
+            <Link to={"/"} > <FaHome /> Home </Link>
+          </li>
         </ul>
       </div>
     </div>

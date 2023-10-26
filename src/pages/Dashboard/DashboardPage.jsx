@@ -9,7 +9,8 @@ import Calender from "../../components/Dashboard/Calender";
 const DashboardPage = () => {
   return (
     <main className="font-[sans-serif]">
-      <section className="grid grid-cols-2 lg:grid-cols-4  px-4 py-4  mt-10 rounded-md items-start bg-base-100 justify-evenly gap-6">
+      <section className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-4  px-4 py-4  mt-10 rounded-md
+       items-start bg-base-100 justify-evenly lg:gap-10 md:gap-8 gap-3">
         {/* Student--Count */}
         <div className="flex lg:gap-2 gap-1  lg:justify-center items-center">
           <div className="bg-accent rounded-full md:p-5 p-3 lg:p-6">
