@@ -1,3 +1,4 @@
+import { Divide as Hamburger } from 'hamburger-react'
 import icon from "../../assets/images/icon.png";
 import { Link, NavLink } from "react-router-dom";
 
@@ -60,45 +61,27 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 h-20 fixed">
+    <div className="navbar z-20 bg-base-100 h-20 fixed">
       <div className="navbar-start">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            {navList}
-            <div>
-              <Link
+        <details className="dropdown lg:hidden">
+          <summary className="m-1 btn">
+            <Hamburger  rounded  easing="ease-in" />
+          </summary>
+          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+           {navList}
+           <Link
                 to={"/login"}
                 className="text-base-100 bg-primary ml-2 lg:ml-0 w-20 text-[12px] lg:text-md lg:w-28 text-center 
                btn btn-xs lg:btn-lg hover:bg-blue-950 
                rounded-tr-sm lg:rounded-tl-3xl rounded-tl-2xl
                rounded-bl-sm lg:rounded-br-3xl rounded-br-2xl"
               >
-                SIGN IN
+                Login
               </Link>
-            </div>
           </ul>
-        </div>
+        </details>
         <Link>
-          <div className="w-52 flex items-center justify-center">
+          <div className="lg:w-52 w-40  flex items-center justify-center">
             <img className="" src={icon} />
           </div>
         </Link>

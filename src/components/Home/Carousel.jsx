@@ -11,7 +11,7 @@ import "swiper/css/free-mode";
 import { Autoplay, FreeMode, Pagination, Navigation } from "swiper/modules";
 
 const Carousel = () => {
-  const images = [
+  const data = [
     {
       img: "https://i.ibb.co/3cqqPkr/bsc.jpg",
       title: "B.Sc Honours in Chemistry",
@@ -72,7 +72,7 @@ const Carousel = () => {
         modules={[Autoplay, FreeMode, Pagination, Navigation]}
         className="mySwiper"
       >
-        {images.map((slide) => (
+        {data?.map((slide) => (
           <SwiperSlide className="lg:px-10  lg:py-10 py-8" key={slide.img}>
             <div className="card md:ml-3
             hover: transform hover:scale-105  transition duration-500 ease-in-out 

@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-custom{
+    background: rgb(19,189,217);
+background: radial-gradient(circle, rgba(19,189,217,1) 0%, rgba(8,41,69,1) 100%);
+}
+
+.bg-image{
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+@media screen and (max-width:767px) {
+    .bg-image{
+        background-attachment: unset;
+        height: 70vh;
+    }
+}
+
+@media screen and (min-width:768px)  and (max-width:1023px){
+    .bg-image{
+        background-attachment: unset;
+        height: 80vh;
+    }
+}

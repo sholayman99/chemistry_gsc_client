@@ -27,7 +27,7 @@ const LatestEvents = () => {
         </h1>
         <div className="lg:w-20 lg:h-1 w-12 h-0.5 bg-neutral"></div>
       </div>
-      {data.map((event) => (
+      {data?.map((event) => (
         <div key={event.img} className="hero  hover: transform hover:scale-105  transition duration-500 ease-in-out
         hover:border-accent border-[2px] my-6">
         <div className="hero-content px-4  flex-col-reverse  shadow-xl bg-base-100 lg:flex-row">

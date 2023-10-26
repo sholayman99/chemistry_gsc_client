@@ -2,12 +2,11 @@ import bg from "../../assets/images/home.jpg"
 
 const Banner = () => {
     return (
-        <div className="lg:bg-fixed flex items-center justify-center flex-col" 
+        <div className="bg-image flex items-center justify-center flex-col" 
          style={{backgroundImage:`url(${bg})`,
          backgroundSize:"cover", 
          backgroundRepeat: "no-repeat",
          backgroundPosition:"center center",
-         height:"100vh",
          }}>
          
            <h2 className="text-base-100 lg:text-[2.5rem] md:text-[2rem] text-[1rem] font-bold ">Welcome to </h2>
@@ -20,3 +19,7 @@ const Banner = () => {
 };
 
 export default Banner;
+
+
+
+

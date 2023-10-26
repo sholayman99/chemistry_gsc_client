@@ -8,6 +8,8 @@ import Signup from "../pages/Signup";
 import Login from "../pages/Login";
 import Dashboard from "../layout/Dashboard/Dashboard";
 import UpdateProfile from "../pages/UpdateProfile";
+import DashboardPage from "../pages/Dashboard/DashboardPage";
+import StudentProfile from "../pages/Dashboard/StudentProfile";
 
 
 const routes = createBrowserRouter([
@@ -20,19 +22,19 @@ const routes = createBrowserRouter([
                 element : <Home />
             },
             {
-                path : "/about",
+                path : "about",
                 element : <About />
             },
             {
-                path : "/contact",
+                path : "contact",
                 element : <Contact />
             },
             {
-                path : "/signup",
+                path : "signup",
                 element : <Signup />
             },
             {
-                path : "/login",
+                path : "login",
                 element : <Login />
             },
             {
@@ -40,19 +42,26 @@ const routes = createBrowserRouter([
                 element : <NotFound />
             },
             {
-                path:"/update-profile",
+                path:"update-profile",
                 element: <UpdateProfile />
             }
            
         ]
     },
     {
-        path:"/dashboard",
-        element: <Dashboard />,
-        children : [
-            
+        path: 'dashboard',
+        element: <Dashboard></Dashboard>, 
+        children: [
+          {
+            path: '/dashboard', 
+            element: <DashboardPage />
+          },
+          {
+            path:"studentProfile",
+            element:<StudentProfile />
+          }
         ]
-    }
+      }
 ])
 
 export default  routes ;

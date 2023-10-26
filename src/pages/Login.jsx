@@ -26,12 +26,11 @@ const Login = () => {
     <div
       style={{
         backgroundImage: `url(${login})`,
-        height: "100vh",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center,center",
       }}
-      className="min-h-screen flex items-center lg:justify-start justify-center"
+      className="bg-image flex items-center lg:justify-start justify-center"
     >
       <div className="bg-base-100 lg:ml-32 px-4 py-6 
        rounded-3xl shadow-md  lg:w-[32%] w-full my-6 mx-10 lg:mx-0 lg:my-0  transition-transform transform hover:scale-105">
