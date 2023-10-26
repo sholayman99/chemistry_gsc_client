@@ -57,7 +57,7 @@ const routes = createBrowserRouter([
             element: <DashboardPage />
           },
           {
-            path:"studentProfile",
+            path:"profile",
             element:<StudentProfile />
           }
         ]
