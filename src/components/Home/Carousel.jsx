@@ -66,7 +66,7 @@ const Carousel = () => {
           delay: 3500,
           disableOnInteraction: false,
         }}
-        spaceBetween={30}
+        spaceBetween={20}
         freeMode={true}
         navigation={true}
         modules={[Autoplay, FreeMode, Pagination, Navigation]}
@@ -87,11 +87,11 @@ const Carousel = () => {
               <div className="flex flex-col items-center text-center mt-4 lg:mt-0">
                 <h2 className="lg:card-title md:text-[13px] lg:font-bold lg:mt-2 font-normal text-[8px] text-primary">{slide.title} </h2>
                 <div className="lg:mt-6 flex items-center lg:px-8 lg:max-w-[70%] 
-                max-w-[70%] mt-3 px-2 py-1 rounded-md lg:py-2 text-center mx-auto 
-                bg-gradient-to-r from-warning to-[#f59e0b]
+                max-w-[70%] mt-3 px-1 md:px-3 py-0.5 rounded-md lg:py-2 md:py-1 text-center mx-auto 
+                bg-gradient-to-r from-[#f9c320] to-[#eefe04]
                 transform hover:scale-105 transition duration-500 ease-in-out"
                 >
-                  <p className=" lg:text-[14px] text-[4px] md:text-[12px]  font-bold">Read More..</p>
+                  <p className=" lg:text-[14px] text-[7px] md:text-[12px]  font-bold">Read More..</p>
                     <BsFillCheckCircleFill className="lg:text-2xl md:text-[14px] text-[6px]"/>
                  
                 </div>

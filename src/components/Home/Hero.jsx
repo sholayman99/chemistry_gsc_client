@@ -6,7 +6,7 @@ const Hero = () => {
   const text = "'";
   return (
     <div className="hero min-h-screen">
-      <div className="hero-content flex-col-reverse px-4 mx-2 lg:mx-0 py-10 shadow-xl bg-base-100 lg:flex-row-reverse">
+      <div className="hero-content flex-col-reverse gap-16 px-4 mx-2 lg:mx-0 py-10 shadow-xl bg-base-100 lg:flex-row-reverse">
         <img src={hero} className="lg:max-w-md hover:border-accent border-[2px]
          hover: transform hover:scale-105  transition duration-500 ease-in-out
           w-full rounded-lg shadow-2xl" />

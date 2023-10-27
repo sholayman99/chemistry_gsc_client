@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .menu .link-inactive{
-    color:rgb(62, 59, 59);
+    color:rgb(38, 36, 36);
     background-color: none;
 }
 .menu .link-active{
-    color: #060202;
+    color: #000000;
     font-weight: bold;
     text-decoration: underline;
     background-color: none;
@@ -17,6 +17,14 @@
 .bg-image{
     background-attachment: fixed;
     height: 100vh;
+}
+
+
+
+
+.bg-custom-new{
+    background-image: radial-gradient( circle 941px at 2.6% 6.8%,  rgba(33, 110, 192, 0.81) 15.9%, rgba(255, 218, 71, 0.7) 88.6% );
+    
 }
 
 

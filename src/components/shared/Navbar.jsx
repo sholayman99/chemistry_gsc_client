@@ -61,7 +61,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar z-20 bg-base-100 h-20 fixed">
+    <div className="navbar z-20 bg-base-100 h-20 max-w-screen-2xl fixed">
       <div className="navbar-start">
         <details className="dropdown lg:hidden">
           <summary className="m-1 btn">
@@ -81,7 +81,7 @@ const Navbar = () => {
           </ul>
         </details>
         <Link>
-          <div className="lg:w-52 w-40  flex items-center justify-center">
+          <div className="lg:w-56 w-40 md:w-56 flex items-center justify-center">
             <img className="" src={icon} />
           </div>
         </Link>

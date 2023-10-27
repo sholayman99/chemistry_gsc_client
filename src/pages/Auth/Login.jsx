@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import login from "../assets/images/login.jpg";
+import login from "../../assets/images/login.jpg";
 import { useForm, Controller } from "react-hook-form";
 import {FaHome} from "react-icons/fa"
 

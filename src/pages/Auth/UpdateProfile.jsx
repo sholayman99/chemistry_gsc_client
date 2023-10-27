@@ -1,5 +1,5 @@
 import { useForm, Controller } from "react-hook-form";
-import signup from "../assets/images/signup.jpg";
+import signup from "../../assets/images/signup.jpg";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -36,7 +36,7 @@ const UpdateProfile = () => {
         >
           <div className="flex mb-4 items-center justify-center flex-col">
             <h2
-              className="lg:text-2xl md:text-xl text-lg font-google text-center text-primary
+              className="lg:text-2xl md:text-xl uppercase text-lg font-google text-center text-primary
              font-bold mb-3"
             >
               Add Your Information

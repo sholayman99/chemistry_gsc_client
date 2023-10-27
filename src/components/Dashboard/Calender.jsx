@@ -4,7 +4,7 @@ import "react-calendar/dist/Calendar.css";
 import { FaCalendarAlt } from "react-icons/fa";
 
 const Calender = () => {
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(new Date() || null);
 
 
   const handleDateChange = (date) => {

@@ -1,13 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main/Main";
-import Home from "../pages/Home"
-import Contact from "../pages/Contact";
-import About from "../pages/About";
+import Home from "../pages/Home/Home"
+import Contact from "../pages/Contact/Contact";
+import About from "../pages/About/About";
 import NotFound from "../components/shared/NotFound";
-import Signup from "../pages/Signup";
-import Login from "../pages/Login";
+import Signup from "../pages/Auth/Signup";
+import Login from "../pages/Auth/Login";
 import Dashboard from "../layout/Dashboard/Dashboard";
-import UpdateProfile from "../pages/UpdateProfile";
+import UpdateProfile from "../pages/Auth/UpdateProfile";
 import DashboardPage from "../pages/Dashboard/DashboardPage";
 import StudentProfile from "../pages/Dashboard/StudentProfile";
 
