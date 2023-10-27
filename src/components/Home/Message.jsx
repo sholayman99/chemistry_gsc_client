@@ -4,13 +4,17 @@ const Message = () => {
   const s = "'";
   return (
     <div className="hero min-h-screen">
-      <div className="hero-content gap-16 flex-col-reverse px-4 mx-2 lg:mx-0 py-10 shadow-xl bg-base-100 lg:flex-row-reverse">
+      <div className="hero-content items-start gap-16 flex-col-reverse px-4 mx-2 lg:mx-0 py-10 shadow-xl bg-base-100 lg:flex-row-reverse">
+        <div className="border-t-[20px] border-r-[20px] border-l-[20px] border-b-[30px]
+         border-base-200 rounded-lg shadow-3xl bg-base-200">
         <img
           src={chairman}
-          className="lg:max-w-md hover:border-accent border-[2px]
-           hover: transform hover:scale-105  transition duration-500 ease-in-out
-            w-full max-h-xl lg:h-[500px] md:h-[800px] rounded-lg shadow-2xl"
+          className="lg:max-w-md
+           hover: transform hover:scale-[1.02]  transition duration-500 ease-in-out
+            lg:w-[300px] max-h-xl lg:h-[400px]  md:h-[800px] "
         />
+        <p className="text-center font-bold mt-2">Professor Dr. S. M. Afzal Hossain</p>
+        </div>
         <div className="lg:max-w-[50%] w-full ">
           <div className="flex  justify-start items-center">
             <div className="lg:w-[3px] w-[2px] h-5 lg:h-8 bg-secondary rounded-2"></div>

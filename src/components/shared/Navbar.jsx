@@ -19,6 +19,18 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
+          to={"/notices"}
+          className={({ isActive }) =>
+            isActive
+              ? "font-bold  text-primary underline text-sm"
+              : "text-sm  font-semibold"
+          }
+        >
+         ALL_NOTICE
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to={"/contact"}
           className={({ isActive }) =>
             isActive
@@ -39,7 +51,21 @@ const Navbar = () => {
                 : "text-sm  font-semibold"
             }
           >
-            ABOUT
+            ABOUT_US
+          </NavLink>
+        }
+      </li>
+      <li>
+        {
+          <NavLink
+            to={"/members"}
+            className={({ isActive }) =>
+              isActive
+                ? "font-bold text-primary underline text-sm"
+                : "text-sm  font-semibold"
+            }
+          >
+           DEP. MEMBERS
           </NavLink>
         }
       </li>
@@ -64,8 +90,8 @@ const Navbar = () => {
     <div className="navbar z-20 bg-base-100 h-20 max-w-screen-2xl fixed">
       <div className="navbar-start">
         <details className="dropdown lg:hidden">
-          <summary className="m-1 btn">
-            <Hamburger  rounded  easing="ease-in" />
+          <summary className="m-1 border-none btn">
+            <Hamburger  size={20} rounded  easing="ease-in" />
           </summary>
           <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
            {navList}

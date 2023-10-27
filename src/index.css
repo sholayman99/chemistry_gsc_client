@@ -23,7 +23,7 @@
 
 
 .bg-custom-new{
-    background-image: radial-gradient( circle 941px at 2.6% 6.8%,  rgba(33, 110, 192, 0.81) 15.9%, rgba(255, 218, 71, 0.7) 88.6% );
+    background-image: radial-gradient( circle 941px at 2.6% 6.8%,  rgba(34, 189, 255, 0.76) 15.9%, rgba(255, 218, 71, 0.7) 88.6% );
     
 }
 
@@ -35,13 +35,13 @@
 @media screen and (max-width:767px) {
     .bg-image{
         background-attachment: unset;
-        height: 70vh;
+        height: 50vh;
     }
 }
 
 @media screen and (min-width:768px)  and (max-width:1023px){
     .bg-image{
         background-attachment: unset;
-        height: 80vh;
+        height: 60vh;
     }
 }

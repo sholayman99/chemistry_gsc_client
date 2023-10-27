@@ -21,7 +21,7 @@ const LatestEvents = () => {
   ];
   return (
     <section className="mt-6 mb-16 md:mt-10 md:mb-20 relative lg:mt-10 lg:mb-24 ">
-      <div className="flex flex-col  items-center justify-center lg:my-10">
+      <div className="flex flex-col items-center justify-center lg:my-10">
         <h1 className="lg:text-[2.5rem] text-[1.3rem] font-bold font-[sans-serif] text-primary">
           Latest Events
         </h1>
@@ -30,7 +30,7 @@ const LatestEvents = () => {
       {data?.map((event) => (
         <div key={event.img} className="hero  hover: transform hover:scale-105  transition duration-500 ease-in-out
         hover:border-accent border-[2px] my-6">
-        <div className="hero-content px-4  flex-col-reverse  shadow-xl bg-base-100 lg:flex-row">
+        <div className="hero-content px-4  gap-16  flex-col-reverse  shadow-xl bg-base-100 lg:flex-row">
           <img src={event.img} className="lg:max-w-md w-full rounded-lg shadow-2xl" />
           <div className="lg:max-w-[50%] w-full ">
             <div className="flex flex-col justify-start items-start">
@@ -56,8 +56,8 @@ const LatestEvents = () => {
         </div>
       </div>
       ))}
-      <button className="btn absolute bottom-[-3] right-5 lg:btn-md px-2 md:btn-sm btn-xs 
-      hover:bg-base-200 hover:text-neutral hover:underline 
+      <button className="btn btn-outline absolute bottom-[-3] right-5 lg:btn-md px-2 md:btn-sm btn-xs 
+        hover:underline 
       btn-neutral">All Events..<BiSolidHandRight className="lg:text-xl md:text-lg text-sm" /></button>
     </section>
   );

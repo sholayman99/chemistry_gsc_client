@@ -10,6 +10,8 @@ import Dashboard from "../layout/Dashboard/Dashboard";
 import UpdateProfile from "../pages/Auth/UpdateProfile";
 import DashboardPage from "../pages/Dashboard/DashboardPage";
 import StudentProfile from "../pages/Dashboard/StudentProfile";
+import Notice from "../pages/Notice/Notice";
+import Members from "../pages/Members/Members";
 
 
 const routes = createBrowserRouter([
@@ -28,6 +30,14 @@ const routes = createBrowserRouter([
             {
                 path : "contact",
                 element : <Contact />
+            },
+            {
+                path : "notices",
+                element : <Notice />
+            },
+            {
+                path : "members",
+                element : <Members />
             },
             {
                 path : "signup",
