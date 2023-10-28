@@ -91,7 +91,7 @@ const Carousel = () => {
                 bg-gradient-to-r from-[#f9c320] to-[#eefe04]
                 transform hover:scale-105 transition duration-500 ease-in-out"
                 >
-                  <p className=" lg:text-[14px] text-[7px] md:text-[12px]  font-bold">Read More..</p>
+                  <button className=" lg:text-[14px] text-[7px] md:text-[12px]  font-bold">Read More..</button>
                     <BsFillCheckCircleFill className="lg:text-2xl md:text-[14px] text-[6px]"/>
                  
                 </div>

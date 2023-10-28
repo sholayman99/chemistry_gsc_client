@@ -42,6 +42,6 @@
 @media screen and (min-width:768px)  and (max-width:1023px){
     .bg-image{
         background-attachment: unset;
-        height: 60vh;
+        height: 50vh;
     }
 }
