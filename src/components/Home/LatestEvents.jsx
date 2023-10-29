@@ -22,7 +22,7 @@ const LatestEvents = () => {
   return (
     <section className="mt-6 mb-16 md:mt-10 md:mb-20 relative lg:mt-10 lg:mb-24 ">
       <div className="flex flex-col items-center justify-center lg:my-10">
-        <h1 className="lg:text-[2.5rem] text-[1.3rem] font-bold font-[sans-serif] text-primary">
+        <h1 className="lg:text-[2.5rem] md:text-[2rem] uppercase text-[1.3rem] font-bold font-[sans-serif] text-primary">
           Latest Events
         </h1>
         <div className="lg:w-20 lg:h-1 w-12 h-0.5 bg-neutral"></div>

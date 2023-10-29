@@ -1,10 +1,20 @@
 import { Divide as Hamburger } from 'hamburger-react'
 import icon from "../../assets/images/icon.png";
 import { Link, NavLink } from "react-router-dom";
+import { ExternalLink } from 'react-external-link';
 
 const Navbar = () => {
   const navList = (
     <>
+      <li>
+        <ExternalLink
+          href='https://saadatcollege.gov.bd/'
+          className={ "text-sm  font-semibold" }
+          target="_blank"
+        >
+          GSC_HOME
+        </ExternalLink>
+      </li>
       <li>
         <NavLink
           to={"/"}

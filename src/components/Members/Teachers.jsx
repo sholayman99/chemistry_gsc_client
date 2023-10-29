@@ -4,52 +4,58 @@ const Teachers = () => {
   const members = [
     {
       name: " Dr. S.M. Afzal Hossain",
-      image: "https://brur.ac.bd/wp-content/uploads/2019/03/male.jpg",
+      image: "https://saadatcollege.gov.bd/public/teachers/1692252803.jpg",
       designation: "Professor",
       email: "example@demo.com",
       mobile: "01XXXXXXXXX",
     },
     {
       name: " MD Abdul Barek Sheikh",
-      image: "https://brur.ac.bd/wp-content/uploads/2019/03/male.jpg",
+      image: "https://saadatcollege.gov.bd/public/teachers/1692253145.jpg",
       designation: "Professor",
       email: "example@demo.com",
       mobile: "01XXXXXXXXX",
     },
     {
       name: "Shofiqul Islam",
-      image: "https://brur.ac.bd/wp-content/uploads/2019/03/male.jpg",
+      image: "https://saadatcollege.gov.bd/public/teachers/1692254263.jpg",
       designation: "Assistant professor",
       email: "example@demo.com",
       mobile: "01XXXXXXXXX",
     },
     {
       name: "Momo Akter",
-      image:
-        "https://png.pngtree.com/png-clipart/20210411/original/pngtree-hijab-for-woman-png-image_6213211.jpg",
+      image: "https://saadatcollege.gov.bd/public/teachers/1692260447.jpg",
       designation: "Lecturer",
       email: "example@demo.com",
       mobile: "01XXXXXXXXX",
     },
     {
       name: "Shahadat Hossain",
-      image: "https://brur.ac.bd/wp-content/uploads/2019/03/male.jpg",
+      image: "https://saadatcollege.gov.bd/public/teachers/1692260968.jpg",
       designation: "Lecturer",
       email: "example@demo.com",
       mobile: "01XXXXXXXXX",
     },
     {
       name: "Al Imran Talukder",
-      image: "https://brur.ac.bd/wp-content/uploads/2019/03/male.jpg",
+      image: "https://saadatcollege.gov.bd/public/teachers/1692261345.jpg",
       designation: "Lecturer",
+      email: "example@demo.com",
+      mobile: "01XXXXXXXXX",
+    },
+    {
+      name: "Beauty Khatun",
+      image: "https://saadatcollege.gov.bd/public/teachers/1692261987.jpg",
+      designation: "Demonstrator",
       email: "example@demo.com",
       mobile: "01XXXXXXXXX",
     },
   ];
   return (
-    <section className="my-10">
-      <div className="flex flex-col items-center justify-center gap-1 p-2">
-        <h1 className="lg:text-[2.5rem] text-[1.3rem] font-bold font-[sans-serif] text-primary">
+    <section className="my-2">
+      <div className="flex my-8 flex-col items-center justify-center gap-1 p-2">
+        <h1 className="lg:text-[2.5rem] uppercase md:text-[2rem] text-[1.3rem] font-bold font-[sans-serif] text-primary">
           Teachers List
         </h1>
         <div className="lg:w-20 lg:h-1 w-12 h-0.5 bg-neutral"></div>
@@ -61,7 +67,7 @@ const Teachers = () => {
             className="flex bg-base-100 hover:border-2 border-info hover:scale-105  transition duration-500 ease-in-out justify-center p-10 items-start gap-10"
           >
             <div className="avatar">
-              <div className="lg:w-36 w-16 md:w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+              <div className="lg:w-36 w-16 md:w-28 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2">
                 <img src={member.image} alt={member.name} />
               </div>
             </div>
@@ -76,11 +82,15 @@ const Teachers = () => {
                 <span className="font-bold mr-1">Email Address:</span>
                 {member.email}
               </p>
+              <p className="my-2 text-sm lg:text-md">
+                <span className="font-bold mr-1">Mobile No:</span>
+                {member.mobile}
+              </p>
               <button
                 className="btn hover:scale-105  transition duration-500 ease-in-out
-               btn-outline btn-xs md:btn-sm lg:btn-md btn-primary"
+               btn-outline btn-xs md:btn-sm lg:btn-md btn-info"
               >
-                Details... <BiSolidObjectsHorizontalRight />{" "}
+                Details... <BiSolidObjectsHorizontalRight />
               </button>
             </div>
           </div>

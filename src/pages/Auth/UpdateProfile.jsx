@@ -45,6 +45,7 @@ const UpdateProfile = () => {
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 gap-2">
+              {/** user Image */}
               <div className="mb-1">
                 <label
                   htmlFor="image"
@@ -66,7 +67,7 @@ const UpdateProfile = () => {
                   )}
                 />
               </div>
-
+            {/** user Mobile no */}
               <div className="mb-1">
                 <label
                   htmlFor="mobile"
@@ -103,7 +104,7 @@ const UpdateProfile = () => {
                   </p>
                 )}
               </div>
-
+            {/** Student Registration No */}
               <div className="mb-1">
                 <label
                   htmlFor="regiNo"
@@ -133,7 +134,7 @@ const UpdateProfile = () => {
                   <p className="text-error">Regi No is required</p>
                 )}
               </div>
-
+            {/** Session */}
               <div className="mb-1">
                 <label
                   htmlFor="session"
@@ -163,6 +164,42 @@ const UpdateProfile = () => {
                   <p className="text-error">Session is required</p>
                 )}
               </div>
+              {/** Course */}
+              <div className="mb-1  col-span-1">
+                <label
+                  htmlFor="course"
+                  className="block text-gray-600 font-medium text-xs md:text-sm lg:text-md"
+                >
+                  Course
+                </label>
+                <Controller
+                  name="course"
+                  control={control}
+                  defaultValue=""
+                  rules={{
+                    required: "Course is required",
+                  }}
+                  render={({ field }) => (
+                    <select
+                      {...field}
+                      id="course"
+                      className={`mt-1 lg:p-2 p-1 text-xs md:text-sm lg:text-md w-full 
+                      rounded-md border   ${
+                        errors.course ? "border-error" : "border-gray-300"
+                      }`}
+                    >
+                      <option value="">Select Course</option>
+                      <option value="B.Sc Honours">B.Sc Honours</option>
+                      <option value="M.Sc">M.Sc</option>
+                      <option value="Graduated">Graduated</option>
+                    </select>
+                  )}
+                />
+                {errors.course && (
+                  <p className="text-error">Course is required</p>
+                )}
+              </div>
+               {/**  Student Class roll */}
               <div className="mb-1">
                 <label
                   htmlFor="classroll"
@@ -192,7 +229,7 @@ const UpdateProfile = () => {
                   <p className="text-error">Class Roll is required</p>
                 )}
               </div>
-
+            {/** Student Gender */}
               <div className="mb-1  col-span-1">
                 <label
                   htmlFor="gender"
@@ -272,25 +309,16 @@ const UpdateProfile = () => {
                   name="presentAddress"
                   control={control}
                   defaultValue=""
-                  rules={{
-                    required: "Present Address is required",
-                  }}
                   render={({ field }) => (
                     <textarea
                       {...field}
                       id="presentAddress"
                       rows="4"
-                      className={`mt-1 lg:p-1 p-0.5 text-sm md:text-md lg:text-lg w-full rounded-md border  ${
-                        errors.presentAddress
-                          ? "border-error"
-                          : "border-gray-300"
-                      }`}
+                      className={`mt-1 lg:p-1 p-0.5 text-sm md:text-md lg:text-lg w-full
+                      border-gray-300 rounded-md border`}
                     />
                   )}
                 />
-                {errors.presentAddress && (
-                  <p className="text-error">Present Address is required</p>
-                )}
               </div>
 
               <div className="mb-1 col-span-1">
@@ -304,23 +332,15 @@ const UpdateProfile = () => {
                   name="permanentAddress"
                   control={control}
                   defaultValue=""
-                  rules={{
-                    required: "Permanent Address is required",
-                  }}
                   render={({ field }) => (
                     <textarea
                       {...field}
                       id="permanentAddress"
                       rows="4"
-                      className={`mt-1 lg:p-1 p-0.5 text-sm md:text-md lg:text-lg w-full rounded-md border border-gray-300 ${
-                        errors.permanentAddress ? "border-error" : ""
-                      }`}
+                      className={`mt-1 lg:p-1 p-0.5 text-sm md:text-md lg:text-lg w-full rounded-md border border-gray-300`}
                     />
                   )}
                 />
-                {errors.permanentAddress && (
-                  <p className="text-error">Permanent Address is required.</p>
-                )}
               </div>
             </div>
 
