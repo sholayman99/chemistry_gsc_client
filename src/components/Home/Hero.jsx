@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero from "../../assets/images/hero-home.png";
 import { BiSolidChevronRight } from "react-icons/bi";
 
@@ -18,7 +19,7 @@ const Hero = () => {
             </h1>
           </div>
 
-          <p className="py-6 font-[sans-serif]">
+          <p className="py-6 font-[sans-serif] text-justify">
             Welcome to the Department of Chemistry at the Govt. Saadat
             College,Tangail. The Department views student{text}s education and
             training as its top priority and prepares them for today{text}s
@@ -29,7 +30,7 @@ const Hero = () => {
             actively participate in the department{text}s life, and excel in their
             studies.
           </p>
-          <button
+          <Link to={"/about"}
             className="lg:w-40 btn btn-xs md:btn-sm lg:btn-md  bg-gradient-to-r from-primary 
             text-base-100 to-blue-500  hover: transform hover:scale-105  transition duration-500 ease-in-out"
           >
@@ -37,7 +38,7 @@ const Hero = () => {
             <span className="text-xl">
                     <BiSolidChevronRight />
                   </span>
-          </button>
+          </Link>
         </div>
       </div>
     </div>

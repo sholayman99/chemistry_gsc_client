@@ -1,6 +1,5 @@
 import { BsFillCalendarCheckFill } from "react-icons/bs";
-import { BiSolidHandRight,BiSolidChevronRight } from "react-icons/bi";
-
+import { BiSolidHandRight, BiSolidChevronRight } from "react-icons/bi";
 
 const LatestEvents = () => {
   const data = [
@@ -28,37 +27,51 @@ const LatestEvents = () => {
         <div className="lg:w-20 lg:h-1 w-12 h-0.5 bg-neutral"></div>
       </div>
       {data?.map((event) => (
-        <div key={event.img} className="hero  hover: transform hover:scale-105  transition duration-500 ease-in-out
-        hover:border-accent border-[2px] my-6">
-        <div className="hero-content px-4  gap-16  flex-col-reverse  shadow-xl bg-base-100 lg:flex-row">
-          <img src={event.img} className="lg:max-w-md w-full rounded-lg shadow-2xl" />
-          <div className="lg:max-w-[50%] w-full ">
-            <div className="flex flex-col justify-start items-start">
-              <p className="flex items-center"> <span className="ml-1 mr-2"><BsFillCalendarCheckFill/> </span> {event.date} </p>
-              <h1 className="lg:text-[2.2rem] text-[1.3rem] font-[sans-serif] text-primary  font-semibold">
-                {event.title}
-              </h1>
-            </div>
-  
-            <p className="py-6 font-[sans-serif]">
-              {event.details}
-            </p>
-            <button
-              className="lg:w-40 btn btn-xs md:btn-sm lg:btn-md  bg-gradient-to-r from-primary 
+        <div
+          key={event.img}
+          className="hero  hover: transform hover:scale-105  transition duration-500 ease-in-out
+        hover:border-accent border-[2px] my-6"
+        >
+          <div className="hero-content px-4  gap-16  flex-col-reverse  shadow-xl bg-base-100 lg:flex-row">
+            <img
+              src={event.img}
+              className="lg:max-w-md w-full rounded-lg shadow-2xl"
+            />
+            <div className="lg:max-w-[50%] w-full ">
+              <div className="flex flex-col justify-start items-start">
+                <p className="flex items-center ">
+                  <span className="ml-1 mr-2">
+                    <BsFillCalendarCheckFill />
+                  </span>
+                  {event.date}
+                </p>
+                <h1 className="lg:text-[2.2rem] text-[1.3rem] font-[sans-serif] text-primary  font-semibold">
+                  {event.title}
+                </h1>
+              </div>
+
+              <p className="py-6 font-[sans-serif] text-justify">{event.details}</p>
+              <button
+                className="lg:w-40 btn btn-xs md:btn-sm lg:btn-md  bg-gradient-to-r from-primary 
               text-base-100 to-blue-500  hover: transform hover:scale-105  transition duration-500 ease-in-out"
-            >
-              Read More...
-              <span className="text-xl">
-                      <BiSolidChevronRight />
-                    </span>
-            </button>
+              >
+                Read More...
+                <span className="text-xl">
+                  <BiSolidChevronRight />
+                </span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       ))}
-      <button className="btn btn-outline absolute bottom-[-3] right-5 lg:btn-md px-2 md:btn-sm btn-xs 
+      <button
+        className="btn btn-outline absolute bottom-[-3] right-5 lg:btn-md px-2 md:btn-sm btn-xs 
         hover:underline 
-      btn-neutral">All Events..<BiSolidHandRight className="lg:text-xl md:text-lg text-sm" /></button>
+      btn-neutral"
+      >
+        All Events..
+        <BiSolidHandRight className="lg:text-xl md:text-lg text-sm" />
+      </button>
     </section>
   );
 };

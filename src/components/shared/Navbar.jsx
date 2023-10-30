@@ -85,7 +85,7 @@ const Navbar = () => {
             to={"/dashboard"}
             className={({ isActive }) =>
               isActive
-                ? "font-bold text-primary underline text-sm"
+                ? "font-bold bg-warning text-primary underline text-sm"
                 : "text-sm  font-semibold"
             }
           >
@@ -107,8 +107,8 @@ const Navbar = () => {
            {navList}
            <Link
                 to={"/login"}
-                className="text-base-100 bg-primary ml-2 lg:ml-0 w-20 text-[12px] lg:text-md lg:w-28 text-center 
-               btn btn-xs lg:btn-lg hover:bg-blue-950 
+                className="text-base-100 bg-primary ml-2 lg:ml-0 w-20 text-[12px] 
+                lg:text-md lg:w-28 text-center hover:bg-blue-950 
                rounded-tr-sm lg:rounded-tl-3xl rounded-tl-2xl
                rounded-bl-sm lg:rounded-br-3xl rounded-br-2xl"
               >

@@ -24,7 +24,7 @@ const Message = () => {
             </h1>
           </div>
 
-          <p className="py-6 font-semibold text-black font-[sans-serif]">
+          <p className="py-6 font-semibold text-gray-700 font-[sans-serif] text-justify">
             Welcome to the Department of Chemistry at the Govt. Saadat College.
             As Chairman of this promising Department, it is my immense pleasure
             to work every day with the joy and promise of leading forward
