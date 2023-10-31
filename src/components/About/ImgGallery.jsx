@@ -2,7 +2,7 @@ import ImageGallery from "react-image-gallery";
 // import stylesheet if you're not already using CSS @import
 import "react-image-gallery/styles/css/image-gallery.css";
 
-const Gallery = () => {
+const ImgGallery = () => {
   const images = [
     {
       original: "https://saadatcollege.gov.bd/public/Photo_gallery/1695280296.jpg",
@@ -11,6 +11,7 @@ const Gallery = () => {
     {
       original: "https://saadatcollege.gov.bd/public/Photo_gallery/1695118918.jpg",
       thumbnail: "https://saadatcollege.gov.bd/public/Photo_gallery/1695118918.jpg",
+      
     },
     {
       original: "https://saadatcollege.gov.bd/public/Photo_gallery/1695119351.jpg",
@@ -19,6 +20,10 @@ const Gallery = () => {
     {
       original: "https://saadatcollege.gov.bd/public/Photo_gallery/1695119679.JPG",
       thumbnail: "https://saadatcollege.gov.bd/public/Photo_gallery/1695119679.JPG",
+    },
+    {
+      original: "https://saadatcollege.gov.bd/public/Photo_gallery/1695119188.jpg",
+      thumbnail: "https://saadatcollege.gov.bd/public/Photo_gallery/1695119188.jpg",
     },
   ];
   return (
@@ -31,14 +36,15 @@ const Gallery = () => {
       </div>
       <ImageGallery
         loading = "eager"
-        fullscreen
         infinite={true}
         lazyLoad={false}
         autoPlay={true}
         items={images}
+        className="object-fit-cover"
+        description={images.description}
       />
     </section>
   );
 };
 
-export default Gallery;
+export default ImgGallery;

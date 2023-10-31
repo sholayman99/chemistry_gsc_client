@@ -97,7 +97,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar z-20 bg-base-100 h-20 max-w-screen-2xl fixed">
+    <div className="navbar z-20 top-0 bg-base-100 h-20 max-w-screen-2xl fixed">
       <div className="navbar-start">
         <details className="dropdown lg:hidden">
           <summary className="m-1 border-none btn">

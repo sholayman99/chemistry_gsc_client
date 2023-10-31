@@ -1,4 +1,5 @@
 import AcademicPrograms from "../../components/Home/AcademicPrograms";
+import Album from "../../components/Home/Album";
 import Banner from "../../components/Home/Banner";
 import Hero from "../../components/Home/Hero";
 import LatestEvents from "../../components/Home/LatestEvents";
@@ -13,7 +14,7 @@ const Home = () => {
         <div>
            <Banner />
            <Message />
-           <Hero />
+           <Album />
            <AcademicPrograms />
            <LatestEvents />
         </div>
