@@ -1,10 +1,11 @@
 const MissionVision = () => {
   return (
     <section className="my-5 p-6 bg-base-100">
-      <div className="lg:w-[90%] mx-auto">
-        <h1 className="lg:text-[2rem] uppercase md:text-[1.5rem] text-[1rem] font-bold text-secondary my-3">
+      <div className="lg:w-[90%] my-5 mx-auto">
+        <h1 className="lg:text-[2rem] uppercase md:text-[1.5rem] text-[1rem] font-bold text-secondary ">
           Our mission and Vision
         </h1>
+        <div className="bg-accent mb-4 lg:h-1 h-0.5 lg:w-20 md:w-14 w-10"></div>
         <div>
           <h4 className="text-black font-bold">Vision:</h4>
           <p className="text-gray-800 text-justify">

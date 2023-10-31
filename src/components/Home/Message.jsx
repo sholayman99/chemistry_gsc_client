@@ -24,11 +24,11 @@ const Message = () => {
             </h1>
           </div>
 
-          <p className="py-6 font-semibold text-gray-700 font-[sans-serif] text-justify">
+          <p className="py-6  text-gray-600 font-[sans-serif] text-justify">
             Welcome to the Department of Chemistry at the Govt. Saadat College.
             As Chairman of this promising Department, it is my immense pleasure
             to work every day with the joy and promise of leading forward
-            gradually. The Department has started its journey in 1992. The aim
+            gradually. The Department has started its journey in 1998-1999. The aim
             and objective of the Department is to explore quality education,
             pursue creative achievement, and health sciences research. I am
             confident to do so joined together by providing the world of
