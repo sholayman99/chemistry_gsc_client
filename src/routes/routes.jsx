@@ -12,6 +12,7 @@ import DashboardPage from "../pages/Dashboard/DashboardPage";
 import StudentProfile from "../pages/Dashboard/StudentProfile";
 import Notice from "../pages/Notice/Notice";
 import Members from "../pages/Members/Members";
+import PeriodicTableHistory from "../components/Dashboard/PeriodicTableHistory";
 
 
 const routes = createBrowserRouter([
@@ -69,7 +70,11 @@ const routes = createBrowserRouter([
           {
             path:"profile",
             element:<StudentProfile />
-          }
+          },
+          {
+            path:"periodic-table-history",
+            element:<PeriodicTableHistory />
+          },
         ]
       }
 ])

@@ -27,12 +27,12 @@ const ImgGallery = () => {
     },
   ];
   return (
-    <section className="p-6">
-      <div className="lg:w-[90%] my-5 mx-auto">
-      <h1 className="lg:text-[2rem]  uppercase md:text-[1.5rem] text-[1rem] font-bold text-secondary">
+    <section className="my-5 shadow-xl">
+      <div className="my-5 flex flex-col p-6 items-center justify-center">
+      <h1 className="lg:text-[2.5rem]  uppercase md:text-[2rem] text-[1.5rem] font-bold text-primary">
         Glimpse of the Department
       </h1>
-      <div className="bg-accent mb-4 lg:h-1 h-0.5 lg:w-20 md:w-14 w-10"></div>
+      <div className="bg-neutral mb-4 lg:h-1 h-0.5 lg:w-20 md:w-14 w-10"></div>
       </div>
       <ImageGallery
         loading = "eager"
@@ -40,7 +40,6 @@ const ImgGallery = () => {
         lazyLoad={false}
         autoPlay={true}
         items={images}
-        className="object-fit-cover"
         description={images.description}
       />
     </section>
