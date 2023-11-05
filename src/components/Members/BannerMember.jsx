@@ -1,3 +1,4 @@
+import Textra from "react-textra";
 import memberBg from "../../assets/images/members.jpg";
 
 const BannerMember = () => {
@@ -18,7 +19,11 @@ const BannerMember = () => {
             Department of Chemistry
           </h1>
           <h1 className="lg:text-[4rem] md:text-[3rem] text-[1.5rem] font-bold text-base-100">
-            Department Members
+            <Textra
+              effect="flip"
+              duration={1000}
+              data={["Department Members"]}
+            />
           </h1>
         </div>
       </div>

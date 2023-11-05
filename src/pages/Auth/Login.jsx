@@ -30,7 +30,7 @@ const Login = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center,center",
       }}
-      className="bg-image flex items-center lg:justify-start justify-center"
+      className="bg-image lg:min-h-[100vh] font-[sans-serif] md:min-h-[60vh] min-h-[50vh] flex items-center lg:justify-start justify-center"
     >
       <div className="bg-base-100 lg:ml-32 px-4 py-6 
        rounded-3xl shadow-md  lg:w-[32%] w-full my-6 mx-10 lg:mx-0 lg:my-0  transition-transform transform hover:scale-105">

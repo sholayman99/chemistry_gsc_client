@@ -7,13 +7,14 @@ const Dashboard = () => {
   return (
     <div className="drawer relative lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex pl-4  flex-col items-start justify-start">
+      <div className="drawer-content flex  pl-4 flex-col items-start justify-start">
         {/* Page content here */}
-        <div className="flex  items-center gap-1 pt-4   font-[sans-serif]">
+        <div className="flex  items-center gap-1 pt-4 font-[sans-serif]">
           <PiDotsNineBold className="lg:text-4xl" />
           <h1 className="text-xl font-bold"> Dashboard </h1>
         </div>
-        <Outlet />
+        <div className="w-full bg-black mt-6 h-0.5"></div>
+        <Outlet/>
         <label
           htmlFor="my-drawer-2"
           className="btn swap absolute top-1 border-none p-0 m-0
@@ -53,6 +54,7 @@ const Dashboard = () => {
             <h1 className="font-bold my-3 uppercase lg:text-center text-start p-2 text-xl">
               Chemistry
             </h1>
+           
             <div className="w-52  bg-gray-600 h-[0.1px]"></div>
           </div>
 

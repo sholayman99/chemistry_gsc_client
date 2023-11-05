@@ -6,6 +6,7 @@ import ImgGallery from "../../components/Home/ImgGallery";
 import LatestEvents from "../../components/Home/LatestEvents";
 import Message from "../../components/Home/Message";
 
+
 const Home = () => {
   return (
     <div>

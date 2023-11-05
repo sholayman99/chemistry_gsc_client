@@ -21,7 +21,7 @@ const ContactInfo = () => {
             <h1 className="lg:text-[2.2rem] text-[1.5rem] text-primary font-semibold">
               How To Reach Us
             </h1>
-            <div className="lg:w-10 w-6 h-0.5 bg-secondary rounded-2"></div>
+            <div className="lg:w-20 w-10 h-0.5 bg-secondary rounded-2"></div>
           </div>
           {/* text */}
           <div className="m-8 flex text-gray-600 flex-col gap-4">

@@ -2559,6 +2559,11 @@ react-style-singleton@^2.2.0, react-style-singleton@^2.2.1:
     invariant "^2.2.4"
     tslib "^2.0.0"
 
+react-textra@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/react-textra/-/react-textra-0.2.0.tgz#e622e8d26d10ff2ffb521ace75c502ce3b7f088b"
+  integrity sha512-Jfmn6KRPlZvB4OJQMmx3gCbGgM/tkl1C5P1Nf4OBc1hClZ7resG+0roBmpFYnPef3aFxiddh5pFMuWtxfgcb9w==
+
 react-transition-group@^4.4.1:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"

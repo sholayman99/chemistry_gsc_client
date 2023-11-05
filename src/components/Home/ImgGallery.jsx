@@ -27,7 +27,7 @@ const ImgGallery = () => {
     },
   ];
   return (
-    <section className="my-5 shadow-xl">
+    <section className="mt-5 shadow-xl">
       <div className="my-5 flex flex-col p-6 items-center justify-center">
       <h1 className="lg:text-[2.5rem]  uppercase md:text-[2rem] text-[1.5rem] font-bold text-primary">
         Glimpse of the Department

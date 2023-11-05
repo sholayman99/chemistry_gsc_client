@@ -1,4 +1,5 @@
 import aboutBg from "../../assets/images/about.jpg";
+import Textra from "react-textra";
 
 const BgAbout = () => {
   return (
@@ -17,7 +18,13 @@ const BgAbout = () => {
         <div>
         
           <h1 className="lg:text-[2.5rem] md:text-[2rem] text-[1rem] font-bold">Department of Chemistry</h1>
-          <h1 className="lg:text-[4rem] md:text-[3rem] text-[1.5rem] font-bold text-base-100">About Us</h1>
+          <h1 className="lg:text-[4rem] md:text-[3rem] text-[1.5rem] font-bold text-base-100">
+          <Textra
+              effect="flip"
+              duration={1000}
+              data={["About US"]}
+            />
+          </h1>
           
         </div>
       </div>

@@ -1,3 +1,4 @@
+import Textra from "react-textra";
 import bg from "../../assets/images/home.jpg";
 
 const Banner = () => {
@@ -12,10 +13,10 @@ const Banner = () => {
       }}
     >
       <h2 className="text-base-100 lg:text-[2.5rem] md:text-[2rem] text-[1rem] font-bold ">
-        Welcome to{" "}
+        Welcome to
       </h2>
       <h1 className="text-base-100 lg:text-[3.5rem] md:text-[3rem] text-[1.5rem] font-extrabold">
-        Department of Chemistry
+      <Textra effect='flip' duration={1000} data={['Department Of Chemistry',]} />
       </h1>
       <h3 className="text-warning lg:text-[1.5rem] md:text-[1rem] text-[0.8rem] font-semibold">
         Govt. Saadat College,Tangail

@@ -1,4 +1,5 @@
 import contact from "../../assets/images/contact.jpg";
+import Textra from "react-textra";
 
 const BgContact = () => {
   return (
@@ -18,7 +19,11 @@ const BgContact = () => {
             Departement of Chemistry
           </h2>
           <h1 className="lg:text-[4rem] md:text-[3rem] text-[1.5rem] text-base-100 font-bold">
-            Contact US
+          <Textra
+              effect="flip"
+              duration={1000}
+              data={["Contact US"]}
+            />
           </h1>
         </div>
       </div>
