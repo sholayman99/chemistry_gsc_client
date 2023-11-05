@@ -1,26 +1,29 @@
 import memberBg from "../../assets/images/members.jpg";
 
 const BannerMember = () => {
-    return (
-        <section
+  return (
+    <section
+      className="hero lg:min-h-[90vh] font-[sans-serif] md:min-h-[60vh] min-h-[50vh] bg-image"
       style={{
         backgroundImage: `url(${memberBg})`,
-        backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
         backgroundPosition: "center center",
       }}
-      className="bg-image  flex flex-col items-center lg:items-end justify-center"
     >
-     <div className="lg:p-4 flex flex-col items-center lg:items-end justify-center ">
-     <h2 className="lg:text-[2.5rem] text-gray-400 font-bold md:text-[2rem] text-[1rem]">
-        Department of Chemistry
-      </h2>
-      <h1 className="font-bold text-base-100 lg:text-[4rem] md:text-[4rem] text-[1.5rem] ">
-        Department Members
-      </h1>
-     </div>
+      <div className="hero-overlay bg-opacity-40"></div>
+      <div className="hero-content text-center text-neutral-content">
+        <div>
+          <h1 className="lg:text-[2.5rem] md:text-[2rem] text-[1rem] font-bold">
+            Department of Chemistry
+          </h1>
+          <h1 className="lg:text-[4rem] md:text-[3rem] text-[1.5rem] font-bold text-base-100">
+            Department Members
+          </h1>
+        </div>
+      </div>
     </section>
-    );
+  );
 };
 
 export default BannerMember;
