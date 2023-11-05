@@ -1,9 +1,11 @@
+import BgContact from "../../components/Contact/BgContact";
+
 
 
 const Contact = () => {
     return (
         <div>
-            This is contact page.
+          <BgContact />
         </div>
     );
 };

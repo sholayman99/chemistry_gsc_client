@@ -7,7 +7,7 @@ const AcademicPrograms = () => {
         <h2 className="lg:text-[2.5rem] md:text-[2rem] uppercase text-[1.3rem] font-[sans-serif] font-bold text-primary ">
           Academic Programs
         </h2>
-        <div className="lg:w-20 lg:h-[3px] w-12 h-0.5 bg-secondary rounded-2"></div>
+        <div className="lg:w-20  w-12 h-0.5 bg-secondary rounded-2"></div>
       </div>
       <Carousel />
     </section>

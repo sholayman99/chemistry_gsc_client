@@ -2,9 +2,9 @@ import mpt from "../../assets/images/mpt.jpg";
 
 const PeriodicTableHistory = () => {
   return (
-    <div className="m-10">
-      <img className="w-[70%] h-80 mx-auto" src={mpt} />
-      <p className="text-gray-600 text-justify p-2">
+    <div className="lg:m-10 m-5">
+      <img className="lg:w-[70%] lg:h-80 w-full mx-auto" src={mpt} />
+      <p className="text-gray-600 text-justify  p-2">
         <span className="text-lg font-semibold text-neutral">
           History of the periodic table of chemical elements:
         </span>{" "}

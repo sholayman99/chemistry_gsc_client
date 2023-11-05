@@ -111,7 +111,7 @@ const Album = () => {
          font-bold font-[sans-serif] text-secondary">
         Our Photo Album
         </h1>
-        <div className="lg:w-20  w-12 h-0.5 bg-accent"></div>
+        <div className="lg:w-20 mb-5 w-12 h-0.5 bg-accent"></div>
       </div>
       <Gallery onClick={openLightbox} photos={photos} />;
       <ModalGateway>

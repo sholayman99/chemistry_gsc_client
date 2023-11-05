@@ -108,9 +108,9 @@ const Navbar = () => {
            <Link
                 to={"/login"}
                 className="text-base-100 bg-primary ml-2 lg:ml-0 w-20 text-[12px] 
-                lg:text-md lg:w-28 text-center hover:bg-blue-950 
-               rounded-tr-sm lg:rounded-tl-3xl rounded-tl-2xl
-               rounded-bl-sm lg:rounded-br-3xl rounded-br-2xl"
+                lg:text-md lg:w-32 text-center
+                rounded-tr-md rounded-tl-md 
+                rounded-bl-md rounded-br-2xl"
               >
                 Login
               </Link>
@@ -127,9 +127,9 @@ const Navbar = () => {
         <div>
           <Link
             to={"/login"}
-            className="text-base-100 bg-primary w-28 text-center btn hover:bg-blue-950 
-     rounded-tr-sm rounded-tl-3xl
-    rounded-bl-sm rounded-br-3xl"
+            className="text-base-100 bg-primary lg:w-32 text-center btn hover:bg-blue-950 
+            rounded-tr-md rounded-tl-md 
+            rounded-bl-md lg:rounded-br-3xl rounded-br-2xl"
           >
             Login
           </Link>

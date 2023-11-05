@@ -3,10 +3,13 @@ import aboutBg from "../../assets/images/about.jpg";
 const BgAbout = () => {
   return (
     <section
-      className="hero bg-image"
+    className="hero lg:min-h-[90vh] md:min-h-[60vh] min-h-[50vh] bg-image"
       style={{
         backgroundImage:
           `url(${aboutBg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>

@@ -32,7 +32,7 @@ const ImgGallery = () => {
       <h1 className="lg:text-[2.5rem]  uppercase md:text-[2rem] text-[1.5rem] font-bold text-primary">
         Glimpse of the Department
       </h1>
-      <div className="bg-neutral mb-4 lg:h-1 h-0.5 lg:w-20 md:w-14 w-10"></div>
+      <div className="bg-neutral mb-4 h-0.5 lg:w-20 md:w-14 w-10"></div>
       </div>
       <ImageGallery
         loading = "eager"

@@ -5,7 +5,7 @@ const MissionVision = () => {
         <h1 className="lg:text-[2rem] uppercase md:text-[1.5rem] text-[1rem] font-bold text-secondary ">
           Our mission and Vision
         </h1>
-        <div className="lg:w-20  w-12 mb-2 h-0.5 bg-accent"></div>
+        <div className="lg:w-20  w-12 mb-5 h-0.5 bg-accent"></div>
         <div>
           <h4 className="text-black font-bold">Vision:</h4>
           <p className="text-gray-800 text-justify">

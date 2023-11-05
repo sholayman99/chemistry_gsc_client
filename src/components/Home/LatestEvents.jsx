@@ -24,7 +24,7 @@ const LatestEvents = () => {
         <h1 className="lg:text-[2.5rem] md:text-[2rem] uppercase text-[1.3rem] font-bold font-[sans-serif] text-primary">
           Latest Events
         </h1>
-        <div className="lg:w-20 lg:h-1 w-12 h-0.5 bg-neutral"></div>
+        <div className="lg:w-20 w-12 h-0.5 bg-neutral"></div>
       </div>
       {data?.map((event) => (
         <div

@@ -2,47 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-.menu .link-inactive{
-    color:rgb(38, 36, 36);
-    background-color: none;
+.menu .link-inactive {
+  color: rgb(38, 36, 36);
+  background-color: none;
 }
-.menu .link-active{
-    color: #000000;
-    font-weight: bold;
-    text-decoration: underline;
-    background-color: none;
-}
-
-
-.bg-image{
-    background-attachment: fixed;
-    height: 100vh;
+.menu .link-active {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color: none;
 }
 
-
-
-
-
-.bg-custom-new{
-    background-image: radial-gradient( circle 941px at 2.6% 6.8%,  rgba(152, 68, 255, 0.621) 15.9%, rgba(255, 218, 71, 0.7) 88.6% );
-    
+.bg-image {
+  background-attachment: fixed;
 }
 
+.bg-custom-new {
+  background: hsla(265, 53%, 29%, 1);
 
-  
+  background: linear-gradient(
+    90deg,
+    hsla(265, 53%, 29%, 1) 0%,
+    hsla(24, 93%, 73%, 1) 100%
+  );
 
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(265, 53%, 29%, 1) 0%,
+    hsla(24, 93%, 73%, 1) 100%
+  );
 
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(87, 42, 151) 0%,
+    rgb(246, 181, 138) 100%
+  );
 
-@media screen and (max-width:767px) {
-    .bg-image{
-        background-attachment: unset;
-        height: 50vh;
-    }
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#432371", endColorstr="#FAAE7B", GradientType=1 );
 }
 
-@media screen and (min-width:768px)  and (max-width:1023px){
-    .bg-image{
-        background-attachment: unset;
-        height: 50vh;
-    }
+@media screen and (max-width: 767px) {
+  .bg-image {
+    background-attachment: unset;  
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .bg-image {
+    background-attachment: unset;
+  }
 }
