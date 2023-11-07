@@ -1,5 +1,4 @@
 import { useForm, Controller } from "react-hook-form";
-import signup from "../../assets/images/signup.jpg";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -22,26 +21,18 @@ const UpdateProfile = () => {
 
   return (
     <main
-      style={{
-        backgroundImage: `url(${signup})`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center,center",
-        backgroundSize: "cover",
-      }}
+    className="lg:h-screen m-0 bg-base-100 flex items-center justify-center"
     >
-      <div className="min-h-screen  lg:py-10 flex items-center justify-center">
-        <div
-          className="bg-base-100 rounded-lg transition-transform transform hover:scale-105
-         p-8 lg:w-[70%] w-[90%] "
-        >
-          <div className="flex mb-4 items-center justify-center flex-col">
+     
+        <div className="p-5 w-full" >
+          <div className="flex mb-4 gap-2 items-center justify-center flex-col">
             <h2
               className="lg:text-2xl md:text-xl uppercase text-lg font-google text-center text-primary
-             font-bold mb-3"
+             font-bold"
             >
-              Add Your Information
+             Update Your Information
             </h2>
-            <div className="lg:w-12 lg:h-[2px] bg-secondary"></div>
+            <div className="lg:w-20 w-14 h-0.5 bg-secondary"></div>
           </div>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-4 gap-2">
@@ -355,7 +346,7 @@ const UpdateProfile = () => {
             </div>
           </form>
         </div>
-      </div>
+     
     </main>
   );
 };

@@ -7,7 +7,7 @@ const Dashboard = () => {
   return (
     <div className="drawer relative lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex  pl-4 flex-col items-start justify-start">
+      <div className="drawer-content flex px-2 flex-col items-start justify-start">
         {/* Page content here */}
         <div className="flex  items-center gap-1 pt-4 font-[sans-serif]">
           <PiDotsNineBold className="lg:text-4xl" />
@@ -48,7 +48,7 @@ const Dashboard = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu min-h-full z-30 bg-custom-new text-base-content">
+        <ul className="menu min-h-full z-50 shadow-xl bg-[#E8E9EB] text-base-content">
           {/* Sidebar content here */}
           <div>
             <h1 className="font-bold my-3 uppercase lg:text-center text-start p-2 text-xl">

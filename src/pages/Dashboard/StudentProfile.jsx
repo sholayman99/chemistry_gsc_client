@@ -2,9 +2,11 @@
 
 const StudentProfile = () => {
     return (
-        <div>
-          Profile  
-        </div>
+        <section className="container">
+         <div>
+         Profile  
+         </div>
+        </section>
     );
 };
 

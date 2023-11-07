@@ -18,7 +18,7 @@ const ContactInfo = () => {
         />
         <div className="w-full ">
           <div className="flex  justify-center flex-col items-center">
-            <h1 className="lg:text-[2.2rem] text-[1.5rem] text-primary font-semibold">
+            <h1 className="lg:text-[2.2rem] text-[1.5rem] text-neutral font-semibold">
               How To Reach Us
             </h1>
             <div className="lg:w-20 w-10 h-0.5 bg-secondary rounded-2"></div>

@@ -1,5 +1,9 @@
 import { BsFillCalendarCheckFill } from "react-icons/bs";
-import { BiSolidHandRight, BiSolidChevronRight } from "react-icons/bi";
+import {
+  BiSolidHandRight,
+  BiSolidObjectsHorizontalRight,
+} from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const LatestEvents = () => {
   const data = [
@@ -19,7 +23,7 @@ const LatestEvents = () => {
     },
   ];
   return (
-    <section className="mt-6 mb-16 md:mt-10 md:mb-20 relative lg:mt-10 lg:mb-24 ">
+    <section className="mt-6 mb-16 md:mt-10 md:mb-20 relative mx-auto lg:my-24 ">
       <div className="flex flex-col items-center justify-center lg:my-10">
         <h1 className="lg:text-[2.5rem] md:text-[2rem] uppercase text-[1.3rem] font-bold font-[sans-serif] text-primary">
           Latest Events
@@ -27,40 +31,40 @@ const LatestEvents = () => {
         <div className="lg:w-20 w-12 h-0.5 bg-neutral"></div>
       </div>
       {data?.map((event) => (
-        <div
-          key={event.img}
-          className="hero  hover: transform hover:scale-105  transition duration-500 ease-in-out
-        hover:border-accent border-[2px] my-6"
-        >
-          <div className="hero-content px-4  gap-16  flex-col-reverse  shadow-xl bg-base-100 lg:flex-row">
-            <img
-              src={event.img}
-              className="lg:max-w-md w-full rounded-lg shadow-2xl"
-            />
-            <div className="lg:max-w-[50%] w-full ">
-              <div className="flex flex-col justify-start items-start">
-                <p className="flex items-center ">
-                  <span className="ml-1 mr-2">
-                    <BsFillCalendarCheckFill />
-                  </span>
-                  {event.date}
-                </p>
-                <h1 className="lg:text-[2.2rem] text-[1.3rem] font-[sans-serif] text-primary  font-semibold">
-                  {event.title}
-                </h1>
-              </div>
+        <div key={event.img} className="hero my-8">
+          <div className="py-5 bg-base-100">
+            <Link to={"/"}
+              className="hero-content hover:border-neutral hover:border-[2px] gap-16 flex-col-reverse 
+              lg:flex-row lg:mx-14 md:mx-6 mx-1 hover: transform hover:scale-105  transition duration-500 ease-in-out "
+            >
+              <img src={event.img} className=" w-full lg:h-[300px] rounded-lg shadow-2xl" />
+              <div className="lg:max-w-[50%] w-full ">
+                <div className="flex flex-col justify-start items-start">
+                  <p className="flex items-center ">
+                    <span className="ml-1 mr-2">
+                      <BsFillCalendarCheckFill />
+                    </span>
+                    {event.date}
+                  </p>
+                  <h1 className="lg:text-[2.2rem] text-[1.3rem] font-[sans-serif] text-primary  font-semibold">
+                    {event.title}
+                  </h1>
+                </div>
 
-              <p className="py-6 font-[sans-serif] text-justify">{event.details}</p>
-              <button
-                className="lg:w-40 btn btn-xs md:btn-sm lg:btn-md  bg-gradient-to-r from-primary 
+                <p className="py-6 font-[sans-serif] text-justify">
+                  {event.details}
+                </p>
+                <button
+                  className="lg:w-40 btn btn-xs md:btn-sm lg:btn-md  bg-gradient-to-r from-primary 
               text-base-100 to-blue-500  hover: transform hover:scale-105  transition duration-500 ease-in-out"
-              >
-                Read More...
-                <span className="text-xl">
-                  <BiSolidChevronRight />
-                </span>
-              </button>
-            </div>
+                >
+                  Read More...
+                  <span className="text-xl">
+                    <BiSolidObjectsHorizontalRight />
+                  </span>
+                </button>
+              </div>
+            </Link>
           </div>
         </div>
       ))}

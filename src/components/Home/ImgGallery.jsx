@@ -28,12 +28,13 @@ const ImgGallery = () => {
   ];
   return (
     <section className="mt-5 shadow-xl">
-      <div className="my-5 flex flex-col p-6 items-center justify-center">
-      <h1 className="lg:text-[2.5rem]  uppercase md:text-[2rem] text-[1.5rem] font-bold text-primary">
+       <div className="lg:my-5 my-3 flex flex-col p-6 items-center justify-center">
+      <h1 className="lg:text-[2.5rem]  uppercase md:text-[2rem] text-[1.2rem] font-bold text-primary">
         Glimpse of the Department
       </h1>
       <div className="bg-neutral mb-4 h-0.5 lg:w-20 md:w-14 w-10"></div>
       </div>
+     <div  className="bg-warning py-4">
       <ImageGallery
         loading = "eager"
         infinite={true}
@@ -42,6 +43,8 @@ const ImgGallery = () => {
         items={images}
         description={images.description}
       />
+
+     </div>
     </section>
   );
 };

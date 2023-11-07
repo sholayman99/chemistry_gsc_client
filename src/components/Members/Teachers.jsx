@@ -1,4 +1,5 @@
 import { BiSolidObjectsHorizontalRight } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Teachers = () => {
   const members = [
@@ -55,19 +56,22 @@ const Teachers = () => {
   return (
     <section className="my-2">
       <div className="flex my-8 flex-col items-center justify-center gap-1 p-2">
-        <h1 className="lg:text-[2.5rem] uppercase md:text-[2rem] text-[1.3rem] font-bold font-[sans-serif] text-primary">
+        <h1 className="lg:text-[2.5rem] uppercase md:text-[2rem] text-[1.3rem] font-bold
+         font-[sans-serif] text-secondary">
           Teachers List
         </h1>
         <div className="lg:w-20 lg:h-1 w-12 h-0.5 bg-neutral"></div>
       </div>
-      <div className="grid lg:grid-cols-2 md:m-10 m-3 grid-cols-1 text-neutral gap-10 lg:p-4  items-center">
+      <div className="grid lg:grid-cols-2 md:m-10 m-3 grid-cols-1 text-neutral gap-10 lg:p-4 
+       items-center">
         {members.map((member, i) => (
-          <div
+          <Link to={"/"}
             key={i}
-            className="flex bg-base-100 hover:border-2 border-info hover:scale-105  transition duration-500 ease-in-out justify-center p-10 items-start gap-10"
+            className="flex bg-base-100 hover:border-2 border-neutral hover:scale-105 
+            transition duration-500 ease-in-out justify-center p-10 items-start gap-10"
           >
             <div className="avatar">
-              <div className="lg:w-36 w-16 md:w-28 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2">
+              <div className="lg:w-36 w-16 md:w-28 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
                 <img src={member.image} alt={member.name} />
               </div>
             </div>
@@ -75,7 +79,7 @@ const Teachers = () => {
               <h2 className="font-bold md:text-2xl text-md lg:text-2xl">
                 {member.name}{" "}
               </h2>
-              <h3 className="font-semibold text-[#86198f] md:text-2xl text-md lg:text-2xl">
+              <h3 className="font-semibold text-primary md:text-2xl text-md lg:text-2xl">
                 {member.designation}{" "}
               </h3>
               <p className="my-2 text-sm lg:text-md">
@@ -88,12 +92,12 @@ const Teachers = () => {
               </p>
               <button
                 className="btn hover:scale-105  transition duration-500 ease-in-out
-               btn-outline btn-xs md:btn-sm lg:btn-md btn-info"
+               btn-outline btn-primary btn-xs md:btn-sm lg:btn-md"
               >
                 Details... <BiSolidObjectsHorizontalRight />
               </button>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

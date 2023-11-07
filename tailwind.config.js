@@ -8,23 +8,23 @@ export default {
     themes: [
       {
         mytheme: {
-          primary: "#0E3C68",
-
-          secondary: "#0f1429",
-
-          accent: "rgb(79 70 229)",
-
-          neutral: "#1c1917",
-
+          "primary": "#0047AB",
+          
+          "secondary": "#002244",
+                   
+          "accent": "#4c1d95",
+                   
+          "neutral": "#1c1917",
+                   
           "base-100": "#ffffff",
-
-          info: "rgb(30 27 75)",
-
-          success: "#22c55e",
-
-          warning: "#facc15",
-
-          error: "#dc2626",
+                   
+          "info": "#86198f",
+                   
+          "success": "#22c55e",
+                   
+          "warning": "#facc15",
+                   
+          "error": "#ef4444"
         },
       },
     ],
